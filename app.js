@@ -380,7 +380,11 @@ app.get("/logout",function(req,res){
 
 //=======================================================================
 //starting server
-app.listen(3000,function()
-	{
-		console.log("Yelp camp server is been started");
-	});
+// app.listen(3000,function()
+// 	{
+// 		console.log("Yelp camp server is been started");
+// 	});
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("The YelpCamp Server Has Started!");
+});
