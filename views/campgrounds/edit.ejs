@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+
+<header class="jumbotron">
+    <h1 style="text-align: centre;">Edit campgrounds : <%=campgrounds.name%></h1>
+</header>
+
+<div class="row">
+     <div class="container" style="width: 50%; margin: 0 auto;">
+        <form action="/campgrounds/<%=campgrounds._id%>?_method=PUT" method="post">
+            <input class="form-control" type="text" name="camp[name]" value="<%=campgrounds.name%>">
+            <input style="margin-top: 20px;" class="form-control" type="text" name="camp[image]" value="<%=campgrounds.image%>">
+            <input style="margin-top: 20px;" class="form-control" type="text" name="camp[des]" value="<%=campgrounds.des%>">
+            <button style="margin-top: 20px; height: 10%;" class="btn btn-lg btn-primary form-control">Post</button>
+        </form>
+    </div>
+</div>
+<div class="row">
+     <div class="container" style="width: 50%; margin: 0 auto;">
+        <a href="/campgrounds">Go Back</a>
+    </div>
+</div>
+
+<% include ../partials/footer %>
