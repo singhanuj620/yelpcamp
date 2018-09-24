@@ -11,7 +11,8 @@ app.use( express.static( "public" ) );
 
 //adding mongoose
 var mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://anuj:anujyelp1@ds213513.mlab.com:13513/yelpcamp");
 
 //connecting models export file
 Campground = require("./models/campground");
