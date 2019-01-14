@@ -11,8 +11,8 @@ app.use( express.static( "public" ) );
 
 //adding mongoose
 var mongoose=require("mongoose");
-// mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://anuj:anujyelp1@ds213513.mlab.com:13513/yelpcamp");
+mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://anuj:anujyelp1@ds213513.mlab.com:13513/yelpcamp");
 
 //connecting models export file
 Campground = require("./models/campground");
@@ -380,11 +380,11 @@ app.get("/logout",function(req,res){
 
 //=======================================================================
 //starting server
-// app.listen(3000,function()
-// 	{
-// 		console.log("Yelp camp server is been started");
-// 	});
+app.listen(3000,function()
+	{
+		console.log("Yelp camp server is been started");
+	});
 
-app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The YelpCamp Server Has Started!");
-});
+// app.listen(process.env.PORT, process.env.IP, function(){
+//    console.log("The YelpCamp Server Has Started!");
+// });

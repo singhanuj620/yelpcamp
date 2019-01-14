@@ -1,20 +1,22 @@
 <% include ./partials/header %>
-<div id="loginback">
-<h1 style="text-align: center; color: white; text-shadow: 1px 2px 3px red;"><strong>Login</strong></h1>
-<div class="row">
-     <div class="container" style="width: 50%; margin: 0 auto;">
-        <form action="/login" method="post">
-            <input class="form-control" type="text" name="username" placeholder="Username">
-            <input style="margin-top: 20px;" class="form-control" type="password" name="password" placeholder="Password">
-            <button style="margin-top: 20px; height: 10%;" class="btn btn-lg btn-success form-control">Login Now</button>
-        </form>
+<div class="particles-js">
+    <h1 style="text-align: center; color: white; text-shadow: 1px 2px 3px red;"><strong>Login</strong></h1>
+    <div class="row">
+         <div class="container" style="width: 50%; margin: 0 auto;">
+            <form action="/login" method="post">
+                <input class="form-control" type="text" name="username" placeholder="Username">
+                <input style="margin-top: 20px;" class="form-control" type="password" name="password" placeholder="Password">
+                <button style="margin-top: 20px; height: 10%;" class="btn btn-lg btn-success form-control">Login Now</button>
+            </form>
+        </div>
     </div>
-</div>
-<div class="row">
-     <div class="container" style="width: 50%; margin: 0 auto;">
-        <h4><a href="/register" style="color: inherit;">Not a User ? Sign up Here !</a></h4>
+    <div class="row">
+         <div class="container" style="width: 50%; margin: 0 auto;">
+            <h4><a href="/register" style="color: inherit;">Not a User ? Sign up Here !</a></h4>
+        </div>
     </div>
+<!-- closing of div of particle js file -->
 </div>
-</div>
+
 
 <% include ./partials/footer %>

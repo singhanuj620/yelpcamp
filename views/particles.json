@@ -1,0 +1,14 @@
+{
+	"particles":{
+		"number":{
+			"value":300
+		},
+		"color":{
+			"value":"#000"
+		},
+		"shape":{
+			"type":"traingle"
+		}
+
+	}
+}
